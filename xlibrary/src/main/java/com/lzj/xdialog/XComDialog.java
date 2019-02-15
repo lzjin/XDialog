@@ -155,10 +155,21 @@ public class XComDialog {
     }
 
     /**
-     * 方式 与位置
+     * 动画方式 与位置
      */
     public XComDialog setGravity(int animation, int gravity) {
         window.setWindowAnimations(animation);  //添加动画
+        window.setGravity(gravity);
+        if (gravity == Gravity.CENTER) {
+            moveTop();
+        }
+        return this;
+    }
+    /**
+     * 位置
+     */
+    public XComDialog setGravity( int gravity) {
+        window.setWindowAnimations(R.style.commonAnimation);  //默认动画
         window.setGravity(gravity);
         if (gravity == Gravity.CENTER) {
             moveTop();

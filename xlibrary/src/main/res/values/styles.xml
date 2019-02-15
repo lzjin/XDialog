@@ -12,7 +12,7 @@
     <!--====通用动画======-->
     <style name="commonAnimation" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/xdialog_in_anim</item>  <!-- 下到上=显示 -->
-        <item name="android:windowExitAnimation">@anim/xdialog_out_anim</item>   <!-- 下到上=消失 -->
+        <item name="android:windowExitAnimation">@anim/xdialog_out_anim</item>   <!-- 上到下=消失 -->
     </style>
 
     <!--==========自定义进度弹框============-->

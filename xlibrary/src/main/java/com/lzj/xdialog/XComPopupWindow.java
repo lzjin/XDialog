@@ -178,6 +178,15 @@ public class XComPopupWindow {
         mPopupWindow.setAnimationStyle(animationStyle);
         return this;
     }
+    /**
+     * 设置默认动画
+     *
+     * @return
+     */
+    public XComPopupWindow addAnimation() {
+        mPopupWindow.setAnimationStyle(R.style.commonAnimation);
+        return this;
+    }
 
     /**
      * 添加透明度
